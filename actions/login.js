@@ -23,6 +23,7 @@ exports.userAdd = {
   },
   blockedConnectionTypes: [],
   outputExample: {},
+    global: true,
   run: function(api, connection, next){
     // Check authentication for current Request
     api.ahDashboard.session.checkAuth(connection, function(session){
@@ -60,6 +61,7 @@ exports.userEdit = {
       required: true
     }
   },
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
@@ -82,6 +84,7 @@ exports.userDelete = {
       required: true
     }
   },
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
@@ -101,6 +104,7 @@ exports.currentUser = {
   name: "currentUser",
   description: "currentUser",
   inputs: {},
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
@@ -132,6 +136,7 @@ exports.login = {
       required: true
     }
   },
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
@@ -157,6 +162,7 @@ exports.getUsers = {
   name: "getUsers",
   description: "getUsers",
   inputs: {},
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
@@ -178,6 +184,7 @@ exports.logout = {
   name: "logout",
   description: "logout",
   inputs: {},
+    global: true,
   blockedConnectionTypes: [],
   outputExample: {},
   run: function(api, connection, next){
